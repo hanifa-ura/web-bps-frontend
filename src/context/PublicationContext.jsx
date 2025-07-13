@@ -40,14 +40,28 @@ const PublicationProvider = ({ children }) => {
     }
   };
 
-  const editPublication = (updatedPub) => {
-    setPublications((prev) =>
-      prev.map((pub) => (pub.id === updatedPub.id ? updatedPub : pub))
-    );
+  const editPublication = async (updatedPub) => {
+    try {
+      const result = await publicationService.updatePublication(updatedPub.id, updatedPub);
+      setPublications((prev) =>
+        prev.map(pub => pub.id === updatedPub.id ? result : pub)
+      );
+      setError(null);
+    } catch (err) {
+      setError(err.message);
+      throw err;
+    }
   };
 
-  const deletePublication = (id) => {
-    setPublications((prev) => prev.filter((pub) => pub.id !== id));
+  const deletePublication = async(id) => {
+    try {
+      await publicationService.deletePublication(id);
+      setPublications(prev => prev.filter(pub => pub.id !== id));
+      setError(null);
+    } catch (err) {
+      setError(err.message);
+      throw err;
+    }
   };
 
   return (
