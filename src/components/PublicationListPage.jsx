@@ -1,5 +1,5 @@
 // src/components/PublicationListPage.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { usePublications } from '../hooks/usePublications';
 import { useNavigate } from 'react-router-dom';
 
