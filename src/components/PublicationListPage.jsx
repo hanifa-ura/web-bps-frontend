@@ -1,6 +1,6 @@
 // src/components/PublicationListPage.jsx
 import React, { useState } from 'react';
-import { usePublications } from '../hooks/usePublications';
+import { usePublications, deletePublication } from '../hooks/usePublications';
 import { useNavigate } from 'react-router-dom';
 
 export default function PublicationListPage() {
