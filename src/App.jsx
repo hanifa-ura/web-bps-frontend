@@ -47,6 +47,7 @@ export default function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="/publikasi/detail/:id" element={<DetailPublikasi />} />
           {/* Redirect Routes */}
           <Route path="/" element={<Navigate to="/publications" replace />} />
           <Route path="*" element={<Navigate to="/publications" replace />} />
