@@ -48,8 +48,8 @@ export default function PublicationListPage() {
               <th scope="col" className="px-6 py-3">Judul</th>
               <th scope="col" className="px-6 py-3">Deskripsi</th>
               <th scope="col" className="px-6 py-3">Tanggal Rilis</th>
-              <th scope="col" className="px-6 py-3 text-center">Sampul</th>
-              <th scope="col" className="px-6 py-3 text-center">Aksi</th>
+              <th scope="col" className="px-6 py-3 text-center w-32">Sampul</th>
+              <th scope="col" className="px-6 py-3 text-center w-48">Aksi</th>
             </tr>
           </thead>
 
