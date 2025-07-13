@@ -37,7 +37,7 @@ export default function EditPublicationPage() {
 
     if (coverFile) {
       try{
-        newCoverUrl = URL.createObjectURL(coverFile);
+        newCoverUrl =  await uploadImageToCloudinary(coverFile);
       } catch (err) {
         alert('Gagal upload gambar: ' + err.message);
         return;
