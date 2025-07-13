@@ -1,10 +1,10 @@
 // src/components/PublicationListPage.jsx
 import React, { useState } from 'react';
-import { usePublications, deletePublication } from '../hooks/usePublications';
+import { usePublications } from '../hooks/usePublications';
 import { useNavigate } from 'react-router-dom';
 
 export default function PublicationListPage() {
-  const { publications } = usePublications();
+  const { publications, deletePublication } = usePublications();
   const navigate = useNavigate();
   const [expandedRows, setExpandedRows] = useState([]);
 
