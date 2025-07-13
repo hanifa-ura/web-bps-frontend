@@ -77,7 +77,7 @@ export default function EditPublicationPage() {
             value={title}
             onChange={e => setTitle(e.target.value)}
             className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500"
-            placeholder="Contoh: Provinsi Kalimantan Selatan dalam Angka 2024"
+            placeholder="Contoh: Provinsi Kalimantan Timur dalam Angka 2024"
           />
         </div>
         <div>
@@ -87,7 +87,7 @@ export default function EditPublicationPage() {
             value={description}
             onChange={e => setDescription(e.target.value)}
             className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500"
-            placeholder="Contoh: Publikasi ini memuat data strategis Kalimantan Selatan."
+            placeholder="Contoh: Publikasi ini memuat data strategis Kalimantan Timur."
             rows={4}
           />
         </div>
