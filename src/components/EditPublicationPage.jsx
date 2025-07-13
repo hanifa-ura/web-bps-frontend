@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { usePublications } from '../hooks/usePublications';
+import { uploadImageToCloudinary } from '../services/publicationService';
 
 
 export default function EditPublicationPage() {
