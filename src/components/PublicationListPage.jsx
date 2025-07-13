@@ -85,19 +85,22 @@ export default function PublicationListPage() {
                   </div>
                 </td>
                 <td className="px-6 py-4 text-center">
-                  <button
-                    className="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded text-xs font-semibold"
-                    onClick={() => navigate(`/publications/edit/${pub.id}`)}
-                  >
-                    Edit
-                  </button>
-                  <button
-                    className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-xs font-semibold ml-2"
-                    onClick={() => handleDelete(pub.id)}
-                  >
-                    Hapus
-                  </button>
+                  <div className="flex justify-center gap-2">
+                    <button
+                      className="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded text-xs font-semibold"
+                      onClick={() => navigate(`/publications/edit/${pub.id}`)}
+                    >
+                      Edit
+                    </button>
+                    <button
+                      className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-xs font-semibold"
+                      onClick={() => handleDelete(pub.id)}
+                    >
+                      Hapus
+                    </button>
+                  </div>
                 </td>
+
               </tr>
             ))}
           </tbody>
