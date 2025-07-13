@@ -1,5 +1,5 @@
 // src/components/Navbar.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import bpsLogo from '../assets/bps-logo.png';
 import { useAuth } from '../hooks/useAuth';
